@@ -16,15 +16,15 @@ void main()
     {
         x = ((-b + sqrt(d))/2*a);
         y = ((-b - sqrt(d))/2*a);
-        printf("1st root = %f",x);
-        printf("2nd Root = %f",y);
+        printf("1st root = %2lf",x);
+        printf("2nd Root = %2lf",y);
     }
     else if(d == 0)
     {
         printf("There are two equal roots : ");
         x = ((-b + sqrt(d))/2*a);
         y = ((-b - sqrt(d))/2*a);
-        printf("The roots are = %d and -%d",x,y);
+        printf("The roots are = %2lf and -%2lf",x,y);
     }
     else
     {
