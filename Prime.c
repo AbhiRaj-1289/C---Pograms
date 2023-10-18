@@ -1,4 +1,4 @@
-// C program to find gu=iven number is prime or composite
+// C program to find given number is prime or composite
 
 #include<stdio.h>      
 #include<conio.h>
