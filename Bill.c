@@ -1,54 +1,60 @@
-#include<stdio.h>
-#include<conio.h>
-void main()
+#include <stdio.h>
+int main() 
 {
-    int total,size, s = 100, m = 150, l = 200, cheese;
-    printf("Welcome To Online Pizaa Bill Calculator");
-    printf("Enter The Size of Your Pizaa : ");
-    scanf("%c",&size); 
-    if (size == "s" || size == "S")
+    int total, small = 100, medium = 150, large = 200;
+    char size, cheese;
+    printf("Welcome To Online Pizza Bill Calculator \n");
+    printf("Enter The Size of Your Pizza : ");
+    scanf("%c", &size);  
+
+    if(size == 's' || size == 'S') 
     {
         printf("Do you want extra cheese : (y/n) :");
-        scanf("%c",&cheese);
-        if(cheese == "y" || cheese == "Y")
+        scanf(" %c", &cheese);  
+
+        if(cheese == 'y' || cheese == 'Y') 
         {
-            total = s + 10;
-            printf("Your final bill = %d",total);
-        }
-        else
+            total = small + 10;
+            printf("Your final bill = %d", total);
+        } 
+        else 
         {
-            total = s;
-            printf("Your bill = %d",total);
+            total = small;
+            printf("Your bill = %d", total);
         }
-    }
-    if (size == "m" || size == "M")
+    } 
+    else if(size == 'm' || size == 'M') 
     {
         printf("Do you want extra cheese : (y/n) :");
-        scanf("%c",&cheese);
-        if(cheese == "y" || cheese == "Y")
+        scanf(" %c", &cheese);  
+
+        if(cheese == 'y' || cheese == 'Y') 
         {
-            total = m + 10;
-            printf("Your final bill = %d",total);
-        }
-        else
+            total = medium + 10;
+            printf("Your final bill = %d", total);
+        } 
+        else 
         {
-            total = m;
-            printf("Your bill = %d",total);
+            total = medium;
+            printf("Your bill = %d", total);
         }
-    }
-    if (size == "l" || size == "L")
+    } 
+    else if(size == 'l' || size == 'L') 
     {
         printf("Do you want extra cheese : (y/n) :");
-        scanf("%c",&cheese);
-        if(cheese == "y" || cheese == "Y")
-        {
-            total = l + 10;
-            printf("Your final bill = %d",total);
+        scanf(" %c", &cheese);  
+
+        if(cheese == 'y' || cheese == 'Y') {
+            total = large + 10;
+            printf("Your final bill = %d", total);
+        } else {
+            total = large;
+            printf("Your bill = %d", total);
         }
-        else
-        {
-            total = l;
-            printf("Your bill = %d",total);
-        }
+    } 
+    else 
+    {
+        printf("Invalid Size Input!");
     }
+    return 0;
 }
