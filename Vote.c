@@ -1,4 +1,4 @@
-/*#include<stdio.h>
+#include<stdio.h>
 #include<conio.h>
 void main()
 {
@@ -6,9 +6,10 @@ void main()
     char citizenship;
     printf("Enter age : ");
     scanf("%d",&age);
+    fflush(stdin);
     printf("are you citizen (y/n): ");
-    scanf(" %c",&citizenship);
-    if(age>=18 && age<=90)
+    scanf("%c",&citizenship);
+    if(age>=18 )
     {
         if(citizenship == 'y' || citizenship == 'Y')
         {
@@ -24,27 +25,4 @@ void main()
         printf("You are not of legal age to vote!");
     }
 }
-*/
-#include<stdio.h>
-#include<conio.h>
-#include<ctype.h>
-void main()
-{
-    char c, result;
-    printf("Enter a character : ");
-    scanf("%c",&c);
-    if(islower(c))
-    {
-        c = toupper(c);
-        printf("Entered Character in uppercase = %c",c);
-    }
-    else if(isupper(c))
-    {
-        c = tolower(c);
-        printf("Entered character in uppercase = %c",c);
-    }
-    else
-    {
-        printf("You Entered an invalid character!");
-    }
-}
+
