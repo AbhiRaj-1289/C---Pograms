@@ -23,9 +23,9 @@ void main()
     printf("interest for given inputs = %d",interest);                                   // printing the value of interest
 
     printf("\nDo you want to know the final amount to be paid\nType 'y' for yes or type 'n' for no : ");      //user prompt condition
-    scanf(" %c",&temp);                                                     // storing user choice in temp variable
+    scanf(" %c",&temp);                                                      // storing user choice in temp variable
 
-     if(temp == 'y')                                                         // validating the "True" choice/input of user
+     if(temp == 'y')                                                        // validating the "True" choice/input of user
     {
         amount = principal + interest;                                       // formula to calculate amount
         printf("The total amount to be paid = %d",amount);                  // printing the value of amount
