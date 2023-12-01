@@ -3,7 +3,7 @@
 void main()
 {
     int a, b , sum, product, result, div,ch;
-    //clrscr();
+    clrscr();
     printf("Enter 1 to add.\n");
     printf("Enter 2 to subtract.\n");
     printf("Enter 3 to multiply.\n");
@@ -48,4 +48,5 @@ void main()
         printf("Invalid Input");
         break;
     }
+    getch();
 }

@@ -4,6 +4,7 @@
 void main()
 {
     float a,b,c,d,x,y;
+    clrscr();
     printf("Enter value of a : ");
     scanf("%f",&a);
     printf("Enter the value of b : ");
@@ -31,4 +32,5 @@ void main()
         printf("No Real roots");
 
     }
+    getch();
 }
