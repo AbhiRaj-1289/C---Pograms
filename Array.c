@@ -1,16 +1,63 @@
 #include<stdio.h>
 void main()
 {
-    int a[5], sum = 0, i;
-    printf("Enter Elements : ");
-    for(i = 0; i < 5; i++)
+    int r,c,i,j,k;
+    int a[100][100], b[100][100], result[100][100];
+    printf("Enter no of rows :");
+    scanf("%d",&r);
+    printf("Enter no of columns : ");
+    scanf("%d",&c);
+    printf("Enter elements of first matrix : ");
+    for(i = 0;i < r; i++)
     {
-         scanf("%d",&a[i]);
+        for(j= 0; j < c; j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
     }
-    for(i = 0; i < 5; i++)
+    printf("First Matrix :\n ");
+    for(i = 0;i < r; i++)
     {
-        printf("%d",a[i]);
-        sum = sum + a[i];
+        for(j= 0; j < c; j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
     }
-    printf("%d",sum);
+    printf("Enter elements of Second matrix : ");
+    for(i = 0;i < r; i++)
+    {
+        for(j= 0; j < c; j++)
+        {
+            scanf("%d",&b[i][j]);
+        }
+    }
+    printf("Second Matrix :\n ");
+    for(i = 0;i < r; i++)
+    {
+        for(j= 0; j < c; j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("Resultant Matrix :\n ");
+    for(i = 0;i < r; i++)
+    {
+        for(j= 0; j < c; j++)
+        {
+            for (k = 0; k < c; k++)
+            {
+                result[i][j] += a[i][k] * b[k][j]; 
+            }
+        }
+    }
+    for(i = 0;i < r; i++)
+    {
+        for(j= 0; j < c; j++)
+        {
+            printf("%d\t",result[i][j]);
+        }
+        printf("\n");
+    }
 }

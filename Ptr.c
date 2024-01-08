@@ -1,7 +1,7 @@
 #include<stdio.h>
 void main()
 {
-    int num = 20;
+    int num = 43;
     int *var = &num;
-    printf("%d",*var);
+    printf("%p",*var);
 }
