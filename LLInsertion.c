@@ -9,7 +9,7 @@ struct node
 struct node *head;
 
 
-//function to create sinnly linked list
+//function to create singly linked list
 void createList(int n)
 {
     struct node *newNode, *temp;
@@ -105,7 +105,9 @@ void displayList()
             printf("Data = %d\n", temp->data); 
             temp = temp->next;                 
         }
+        
     }
+    printf("NULL");
 }
 void main()
 {
