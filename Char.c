@@ -15,5 +15,5 @@ int main()
 
   printf("Number of vowels in the string: %d", count);
 
-  return 0
+  return 0;
 }
